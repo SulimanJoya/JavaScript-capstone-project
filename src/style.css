@@ -42,6 +42,21 @@ li {
   margin: 15px;
 }
 
+.mainCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: #edeff5;
+  padding: 30px;
+}
+
+.meal-photo {
+  background-color: rgb(151, 135, 113);
+  border-radius: 17px;
+  overflow: hidden;
+}
+
 .footer {
   width: 95%;
   border: 4px solid rgb(84, 74, 74);
