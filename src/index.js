@@ -4,19 +4,20 @@ import './style.css';
 const homeContainer = document.querySelector('.homepage');
 const baseUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?f=c';
 
-const displayMeals = meals => {
+const displayMeals = (meals) => {
   const borderDiv = document.createElement('div');
   borderDiv.className = 'mainCont';
-  meals.map(meal => {
+  // eslint-disable-next-line array-callback-return
+  meals.map((meal) => {
     const cardDiv = document.createElement('div');
     cardDiv.innerHTML += `<div class="meal-photo"><img src=${meal.strMealThumb} alt=${meal.strMeal}></div>
-		  <div class="meal-desc">
-		    <h2>${meal.strMeal}</h2>
-		    <span><i class="fa-solid fa-heart"></i></span>
-		    <span class="meal-likes"></span>
-		    <button class="comment-btn">Comments</button>
-		    <button class="reserve-btn">Reservation</button>
-		  </div>`;
+      <div class="meal-desc">
+        <h2>${meal.strMeal}</h2>
+        <span><i class="fa-solid fa-heart"></i></span>
+        <span class="meal-likes"></span>
+        <button class="comment-btn">Comments</button>
+        <button class="reserve-btn">Reservation</button>
+      </div>`;
     borderDiv.appendChild(cardDiv);
   });
   homeContainer.append(borderDiv);
