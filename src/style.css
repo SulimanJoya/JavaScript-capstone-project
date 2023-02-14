@@ -25,6 +25,10 @@ li {
   cursor: pointer;
 }
 
+.logo {
+  width: 8rem;
+}
+
 .navbar {
   display: flex;
   width: 100%;

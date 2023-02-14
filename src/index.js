@@ -12,10 +12,10 @@ const displayMeals = meals => {
     cardDiv.innerHTML += `<div class="meal-photo"><img src=${meal.strMealThumb} alt=${meal.strMeal}></div>
 		  <div class="meal-desc">
 		    <h2>${meal.strMeal}</h2>
-		    <span>font-a like btn</span> // replace with font awesome heart
+		    <span><i class="fa-solid fa-heart"></i></span>
 		    <span class="meal-likes"></span>
-		    <button class="comment-btn"></button>
-		    <button class="comment-btn"></button>
+		    <button class="comment-btn">Comments</button>
+		    <button class="reserve-btn">Reservation</button>
 		  </div>`;
     borderDiv.appendChild(cardDiv);
   });
