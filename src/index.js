@@ -2,6 +2,7 @@ import './style.css';
 
 // eslint-disable-next-line no-unused-vars
 const homeContainer = document.querySelector('.homepage');
+const homeContainer = document.querySelector('.homepage');
 const baseUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?f=b';
 
 const displayMeals = meals => {
