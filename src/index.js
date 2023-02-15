@@ -1,8 +1,9 @@
+import itemsCount from './modules/itemsCount';
 import './style.css';
 
 // eslint-disable-next-line no-unused-vars
 const homeContainer = document.querySelector('.homepage');
-const homeContainer = document.querySelector('.homepage');
+const itemsCountSpan = document.querySelector('.recipe-count');
 const baseUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?f=b';
 
 const displayMeals = meals => {
@@ -27,6 +28,7 @@ const displayMeals = meals => {
 const fetchMeals = async () => {
   const req = await fetch(baseUrl);
   const data = await req.json();
+  itemsCountSpan.innerHTML = itemsCount(data.meals);
   displayMeals(await data.meals);
 };
 
