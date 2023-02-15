@@ -1,8 +1,8 @@
 {
-  "name": "capstone project",
+  "name": "JavaScript-capstone-project",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "jest.config.js",
   "scripts": {
     "build": "webpack --mode production",
     "watch": "webpack --watch",
@@ -11,14 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SulimanJoya/Leaderboard-list-app.git"
+    "url": "git+https://github.com/SulimanJoya/JavaScript-capstone-project.git"
   },
-  "author": "Suliman Joya",
+  "keywords": [],
+  "author": "Suliman Joya & Daniel Majesty",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SulimanJoya/Leaderboard-list-app/issues"
+    "url": "https://github.com/SulimanJoya/JavaScript-capstone-project/issues"
   },
-  "homepage": "https://github.com/SulimanJoya/Leaderboard-list-app#readme",
+  "homepage": "https://github.com/SulimanJoya/JavaScript-capstone-project/dist",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",

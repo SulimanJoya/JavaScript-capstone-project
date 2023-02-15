@@ -25,6 +25,10 @@ li {
   cursor: pointer;
 }
 
+.logo {
+  width: 8rem;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -40,6 +44,21 @@ li {
 
 .navitems {
   margin: 15px;
+}
+
+.mainCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: #edeff5;
+  padding: 30px;
+}
+
+.meal-photo {
+  background-color: rgb(151, 135, 113);
+  border-radius: 17px;
+  overflow: hidden;
 }
 
 .footer {
