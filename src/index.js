@@ -28,7 +28,7 @@ const displayMeals = meals => {
 const fetchMeals = async () => {
   const req = await fetch(baseUrl);
   const data = await req.json();
-  itemsCountSpan.innerHTML = itemsCount(data.meals);
+  itemsCountSpan.innerHTML = `Recipes (${itemsCount(data.meals)})`;
   displayMeals(await data.meals);
 };
 
