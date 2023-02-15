@@ -1,4 +1,4 @@
-import itemsCount from './modules/itemsCount';
+import itemsCount from './modules/itemsCount.js';
 import './style.css';
 
 // eslint-disable-next-line no-unused-vars
@@ -6,11 +6,11 @@ const homeContainer = document.querySelector('.homepage');
 const itemsCountSpan = document.querySelector('.recipe-count');
 const baseUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?f=b';
 
-const displayMeals = meals => {
+const displayMeals = (meals) => {
   const borderDiv = document.createElement('div');
   borderDiv.className = 'mainCont';
   // eslint-disable-next-line array-callback-return
-  meals.map(meal => {
+  meals.map((meal) => {
     const cardDiv = document.createElement('div');
     cardDiv.innerHTML += `<div class="meal-photo"><img src=${meal.strMealThumb} alt=${meal.strMeal}></div>
       <div class="meal-desc">
