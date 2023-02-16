@@ -1,5 +1,4 @@
-const baseUrl =
-  'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/r3EIwD61vFRCzfoyQRqc/likes';
+const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/r3EIwD61vFRCzfoyQRqc/likes';
 
 const getLikes = async () => {
   const req = await fetch(baseUrl);
@@ -8,7 +7,7 @@ const getLikes = async () => {
   console.log(ssss);
 };
 
-const postLike = async id => {
+const postLike = async (id) => {
   const req = await fetch(baseUrl, {
     method: 'POST',
     headers: {
