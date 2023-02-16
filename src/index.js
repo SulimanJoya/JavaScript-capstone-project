@@ -1,5 +1,5 @@
 import itemsCount from './modules/itemsCount.js';
-import postLike from './modules/likes.js';
+import postLike, { getLikes } from './modules/likes.js';
 import './style.css';
 
 // eslint-disable-next-line no-unused-vars
@@ -7,11 +7,12 @@ const homeContainer = document.querySelector('.homepage');
 const itemsCountSpan = document.querySelector('.recipe-count');
 const baseUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?f=b';
 
-const displayMeals = (meals) => {
+const displayMeals = meals => {
   const borderDiv = document.createElement('div');
   borderDiv.className = 'mainCont';
+  borderDiv.style.backgroundColor = 'red';
   // eslint-disable-next-line array-callback-return
-  meals.map((meal) => {
+  meals.map(meal => {
     const cardDiv = document.createElement('div');
     const imgDiv = document.createElement('div');
     imgDiv.className = 'meal-photo';
@@ -24,7 +25,11 @@ const displayMeals = (meals) => {
     likesSpan.addEventListener('click', () => postLike(meal.idMeal));
     likesSpan.innerHTML += '<i class="fa-solid fa-heart"></i>';
     const likesCount = document.createElement('span');
-    likesCount.innerHTML = 0;
+    borderDiv.addEventListener('click', async () => {
+      const hhh = await getLikes(meal.idMeal);
+      likesCount.textContent = hhh;
+    });
+    likesCount.id = meal.idMeal;
     const commentBtn = document.createElement('button');
     commentBtn.className = 'comment-btn';
     commentBtn.textContent = 'Comment';
