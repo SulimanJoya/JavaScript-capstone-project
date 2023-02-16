@@ -1,10 +1,10 @@
 const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/r3EIwD61vFRCzfoyQRqc/likes';
 
-const getLikes = async () => {
+const getLikes = async (id) => {
   const req = await fetch(baseUrl);
-  const data = await req.json();
-  const ssss = await data;
-  console.log(ssss);
+  const processing = await req.json();
+  const data = await processing;
+  data.filter((el) => el.idMeal === id);
 };
 
 const postLike = async (id) => {
@@ -17,7 +17,7 @@ const postLike = async (id) => {
     body: JSON.stringify({ item_id: id }),
   });
   if (req.status === 201) {
-    getLikes();
+    getLikes(id);
   }
 
   console.log(id);
