@@ -45,16 +45,16 @@ li {
   margin-top: 3rem;
 }
 
-a:hover {
-  color: hotpink;
-  border-bottom-style: solid;
-}
-
 .navitems,
 a {
   margin-right: 7rem;
   font-size: 1.8rem;
   color: #fff;
+}
+
+a:hover {
+  color: hotpink;
+  border-bottom-style: solid;
 }
 
 .recipe-count {
@@ -93,7 +93,6 @@ a {
   width: 350px;
   background-color: rgb(213, 182, 182);
   justify-content: center;
-  font-size: 30px;
   border-radius: 15px;
   padding: 8px 0;
   margin: 12px 0;
@@ -117,7 +116,6 @@ a {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 10px 180px;
 }
 
