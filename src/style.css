@@ -13,59 +13,116 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-ul {
-  padding-right: 5rem;
+a {
+  text-decoration: none;
+  /* color: #edeff5; */
+  /* margin-right: 10rem; */
 }
 
 li {
   list-style: none;
 }
 
-.navlinks li {
+.navbar {
+  display: flex;
+  width: 100%;
+  /* font-size: 23px; */
+  justify-content: space-between;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  background-color: #000;
+}
+
+.navitems,
+.logo {
   cursor: pointer;
 }
 
 .logo {
-  width: 8rem;
-}
-
-.navbar {
-  display: flex;
-  width: 100%;
-  margin: 20px;
-  font-size: 23px;
-  justify-content: space-between;
+  width: 5%;
+  border-radius: 50%;
+  margin-left: 12rem;
+  /* cursor: pointer; */
 }
 
 .navlinks {
   display: flex;
-  flex-direction: row;
+  margin-top: 3rem;
 }
 
-.navitems {
-  margin: 15px;
+a:hover {
+  color: hotpink;
+  border-bottom-style: solid;
+}
+
+.navitems,
+a {
+  margin-right: 7rem;
+  font-size: 1.8rem;
+  color: #fff;
+  /* padding: 24px; */
+}
+
+.recipe-count {
+  margin-right: 9rem;
 }
 
 .mainCont {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 5px;
   grid-auto-rows: minmax(100px, auto);
-  background-color: #edeff5;
+  background-color: #eaeaf6;
   padding: 30px;
+  width: 80%;
+  margin: auto;
+  /* height: 100px; */
+}
+
+.meal-desc {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* padding-right: 16px; */
+  font-weight: 900;
+  font-size: 1.5rem;
+  background-color: red;
+  color: darkred;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-right: 6rem;
+}
+
+.comment-btn {
+  background-color: blue;
+}
+
+.reserve-btn {
+  background-color: green;
 }
 
 .meal-photo {
   background-color: rgb(151, 135, 113);
-  border-radius: 17px;
+  border-radius: 30px;
   overflow: hidden;
+  /* width: 90%; */
+  flex-wrap: wrap;
+  /* object-fit: fill; */
+}
+
+.img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
 }
 
 .footer {
-  width: 95%;
-  border: 4px solid rgb(84, 74, 74);
+  width: 100%;
   margin: 80px 20px 20px;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 10px;
+  padding: 40px;
+  font-size: 20px;
+  /* border-radius: 10px; */
+  background-color: #000;
+  color: #fff;
+  text-align: center;
 }
