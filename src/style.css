@@ -1,160 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
-* {
+body {
+  width: 100%;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
-body {
-  max-width: 100%;
+.d-flex {
   display: flex;
-  flex-direction: column;
-  font-family: 'Lato', sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
 }
 
 .navbar {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #000;
-}
-
-.navitems,
-.logo {
-  cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .logo {
-  width: 5%;
+  width: 2rem;
+  height: 2rem;
+  margin: 1.5rem 1rem;
   border-radius: 50%;
-  margin-left: 12rem;
 }
 
 .navlinks {
-  display: flex;
-  margin-top: 3rem;
+  list-style: none;
+  justify-content: space-around;
+  flex: 11;
+  padding-top: 14px;
+  padding-right: 0;
+  padding-inline-start: 0;
 }
 
-.navitems,
-a {
-  margin-right: 7rem;
-  font-size: 1.8rem;
-  color: #fff;
+.navlinks a {
+  text-decoration: none;
+  color: white;
 }
 
-a:hover {
-  color: hotpink;
-  border-bottom-style: solid;
+.navitems {
+  padding: 0 0.2rem;
 }
 
-.recipe-count {
-  margin-right: 9rem;
+.card-div {
+  background-color: bisque;
+  padding: 1rem;
+  margin: 2%;
 }
 
-.mainCont {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  background-color: #d0d0e2;
-  padding: 30px;
-  width: 80%;
-  margin: auto;
+.card-div:nth-child(odd) {
+  background-color: rgb(223, 142, 44);
+  padding: 1rem;
+  margin: 2%;
 }
 
 .meal-desc {
-  display: flex;
   flex-direction: column;
-  color: #fff;
-  font-weight: 900;
-  font-size: 1.6rem;
   text-align: right;
 }
 
-.name-like {
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 50px;
-}
-
-.comment-btn,
-.reserve-btn {
-  display: flex;
-  width: 350px;
-  background-color: rgb(213, 182, 182);
-  justify-content: center;
-  border-radius: 15px;
-  padding: 8px 0;
-  margin: 12px 0;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
-.comment-btn:hover,
-.reserve-btn:hover {
-  color: white;
-  background-color: burlywood;
-}
-
-.button:hover {
-  cursor: pointer;
-  color: #fff;
-}
-
 .btn-div {
-  justify-content: center;
-  display: flex;
   flex-direction: column;
-  margin: 10px 180px;
+  margin: 1rem 2rem 0 2rem;
+}
+
+.name-like {
+  justify-content: space-between;
+}
+
+.like-span {
+  align-self: center;
 }
 
 .likes-count {
   color: black;
-  font-size: 1.8rem;
-  align-items: flex-end;
-  margin-right: 50px;
+  font-size: 1.3rem;
+  margin-right: 4px;
 }
 
-.fa-heart {
-  color: #fff;
-  font-size: 30px;
-}
-
-.fa-heart:hover {
-  color: black;
+.reserve-btn,
+.comment-btn {
+  padding: 0.4rem;
+  margin: 0.4rem 0;
+  text-transform: uppercase;
+  background-color: brown;
+  color: white;
   cursor: pointer;
+  border-radius: 8px;
+}
+
+.reserve-btn:hover,
+.comment-btn:hover {
+  background-color: white;
+  color: brown;
 }
 
 .meal-photo {
-  background-color: rgb(151, 135, 113);
-  border-radius: 30px;
-  overflow: hidden;
-  flex-wrap: wrap;
-}
-
-.img {
-  width: 200px;
-  height: 300px;
-  object-fit: contain;
+  width: 100%;
+  justify-content: center;
 }
 
 .footer {
-  width: 100%;
-  margin: 80px 20px 20px;
-  padding: 40px;
-  font-size: 20px;
-  background-color: #000;
-  color: #fff;
   text-align: center;
+  padding: 1rem 0;
+  color: white;
+  background-color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 426px) {
+  .navbar {
+    padding: 0 15%;
+  }
+
+  .mainCont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #edeff5;
+    padding: 20px 15%;
+  }
 }
