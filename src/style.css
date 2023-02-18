@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin: 1.5rem 1rem;
+  border-radius: 50%;
+}
+
+.navlinks {
+  list-style: none;
+  justify-content: space-around;
+  flex: 11;
+  padding-top: 14px;
+  padding-right: 0;
+  padding-inline-start: 0;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: white;
+}
+
+.navitems {
+  padding: 0 0.2rem;
+}
+
+.card-div {
+  background-color: bisque;
+  padding: 1rem;
+  margin: 2%;
+}
+
+.card-div:nth-child(odd) {
+  background-color: rgb(223, 142, 44);
+  padding: 1rem;
+  margin: 2%;
+}
+
+.meal-desc {
+  flex-direction: column;
+  text-align: right;
+}
+
+.btn-div {
+  flex-direction: column;
+  margin: 1rem 2rem 0 2rem;
+}
+
+.name-like {
+  justify-content: space-between;
+}
+
+.name-like h2 {
+  text-align: left;
+}
+
+.like-span {
+  align-self: center;
+}
+
+.likes-count {
+  color: black;
+  font-size: 1.3rem;
+  margin-right: 4px;
+}
+
+.reserve-btn,
+.comment-btn {
+  padding: 0.4rem;
+  margin: 0.4rem 0;
+  text-transform: uppercase;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.reserve-btn:hover,
+.comment-btn:hover {
+  background-color: white;
+  color: brown;
+}
+
+.meal-photo {
+  width: 100%;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: white;
+  background-color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 426px) {
+  .navbar {
+    padding: 0 15%;
+
+    /* width: 100%; */
+  }
+
+  .mainCont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #edeff5;
+    padding: 20px 15%;
+  }
+}
