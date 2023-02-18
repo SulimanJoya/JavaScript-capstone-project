@@ -20,6 +20,10 @@ const displayMeals = (meals) => {
     descDiv.className = 'meal-desc d-flex';
     const mealName = document.createElement('h2');
     mealName.textContent = meal.strMeal;
+    if (mealName.textContent.length > 15) {
+      mealName.textContent = meal.strMeal.slice(0, 15);
+      mealName.textContent += '....';
+    }
     const likesSpan = document.createElement('span');
     likesSpan.className = 'like-span';
     likesSpan.addEventListener('click', () => postLike(meal.idMeal));

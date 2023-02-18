@@ -66,6 +66,10 @@ body {
   justify-content: space-between;
 }
 
+.name-like h2 {
+  text-align: left;
+}
+
 .like-span {
   align-self: center;
 }
@@ -113,6 +117,7 @@ body {
 @media only screen and (min-width: 426px) {
   .navbar {
     padding: 0 15%;
+    /* width: 100%; */
   }
 
   .mainCont {
