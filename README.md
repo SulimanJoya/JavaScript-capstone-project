@@ -43,8 +43,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/SulimanJoya/JavaScript-capstone-project.git)
-
 [My Presentation link](https://www.loom.com/share/d8fa240c00c4406c8dba715e98199c7c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
